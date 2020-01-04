@@ -20,12 +20,12 @@ function palindromo(pal0) {
 
 function resultado(pal0) {
   var r = palindromo(pal0);
-  if(r) {
-    return (pal0 + " es un palíndromo");
+  var p = pal0;
+  if(!r) {
+    p += " no";
   }
-  else {
-    return (pal0 + " no es un palíndromo");
-  }
+  p += " es un palindromo");
+  return p;
 }
 
 alert(resultado(palabra));

@@ -10,13 +10,7 @@ function palindromo(pal0) {
   var l;
   var i;
   var n = pal1.length;
-  if(n % 2 == 0) {
-    l = n / 2;
-  }
-  else {
-    l = 0.5 + n / 2;
-  }
-  for (i = 0; i < l; i++) {
+  for (i = 0; i < n/2; i++) {
     if(c[i] != c[n-i]) {
       return False;
     }
